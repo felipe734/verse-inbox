@@ -1,0 +1,58 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "123456789",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15550000000",
+              "phone_number_id": "YOUR_PHONE_NUMBER_ID"
+            },
+            "contacts": [
+              {
+                "profile": { "name": "John" },
+                "wa_id": "573001234567"
+              }
+            ],
+            "messages": [
+              {
+                "id": "wamid.inbound123",
+                "from": "573001234567",
+                "timestamp": "1700000000",
+                "type": "text",
+                "text": { "body": "Hello, I need help" }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    },
+    {
+      "id": "123456789",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15550000000",
+              "phone_number_id": "YOUR_PHONE_NUMBER_ID"
+            },
+            "statuses": [
+              {
+                "id": "wamid.outbound456",
+                "status": "delivered",
+                "timestamp": "1700000001",
+                "recipient_id": "573001234567"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
