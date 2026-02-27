@@ -27,7 +27,7 @@ export default async function InboxConversationPage({
 
   let conversations: ConversationRow[] = [];
   let teams: { id: string; name: string; slug: string }[] = [];
-  let allTags: { id: string; name: string }[] = [];
+  let allTags: { id: string; name: string; slug: string; color: string | null }[] = [];
   let detail: Awaited<ReturnType<typeof getConversationDetail>> = null;
   try {
     [conversations, detail, teams, allTags] = await Promise.all([
